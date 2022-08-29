@@ -1,4 +1,4 @@
-package com.hotmail.jean_cochrane;
+package com.hotmail.jean_cochrane.kazuya_utilities;
 
 
 import org.bukkit.Bukkit;

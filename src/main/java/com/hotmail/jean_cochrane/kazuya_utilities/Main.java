@@ -6,8 +6,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.hotmail.jean_cochrane.MainCommand;
-
 
 // https://www.youtube.com/watch?v=Hs1kZu1_ruI
 // https://github.com/2lstudios-mc/Bukkit-Boilerplate
