@@ -5,6 +5,7 @@ main: ${mainClass}
 version: ${version}
 url: ${url}
 commands:
-  example:
-    aliases: ["ex"]
-    description: "Plugin de Utilidades de Kazuya."
+  kazuya-utilities:
+    usage: /<command> <reload>
+    aliases: [kazu-u]
+    description: "recarga el configuration.yml ."
