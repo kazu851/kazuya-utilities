@@ -25,6 +25,7 @@ public class Main extends JavaPlugin {
         pm.registerEvents( new ConfigListener(this), this);
         pm.registerEvents( new PlayerJoin(), this);
         pm.registerEvents( new ReadChat(), this);
+        pm.registerEvents( new BoatEvents(), this);
         
         getCommand("kazuya-utilities").setExecutor(new MainCommand());
     }
@@ -38,6 +39,9 @@ public class Main extends JavaPlugin {
         config.addDefault("wellcome-message-active", true);
         config.addDefault("wellcome-message", "Bienvenido al complemento de Kazuya");
         config.addDefault("plugin-info-message-active", true);
+        config.addDefault("allow-zombie-in-vehicle", true);
+        config.addDefault("allow-husk-in-vehicle", true);
+        config.addDefault("allow-villager-zombie-in-vehicle", true);
         config.options().copyDefaults(true);
         saveConfig();
 
