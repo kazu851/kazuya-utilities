@@ -17,7 +17,9 @@ public class VillagerEvents implements Listener {
 		if (!event.getReason().equals(ChangeReason.EMPLOYED)) return;
 		if (ConfigListener.plugin.getConfig().getBoolean("prevent-villagers-career-change")) return;
         
-        Bukkit.broadcastMessage(ChatColor.DARK_AQUA + "<Aldeano>: Lo siento pero ya estudié muchos años como para dejar mi carrera!");
+        if (ConfigListener.plugin.getConfig().getBoolean("villager-says-he-studied")){
+            Bukkit.broadcastMessage(ChatColor.DARK_AQUA + "<Aldeano>: Lo siento pero ya estudié muchos años como para dejar mi carrera!");
+        }
 		Villager villager = event.getEntity();
 		villager.setVillagerExperience(villager.getVillagerExperience() + 1);
 
