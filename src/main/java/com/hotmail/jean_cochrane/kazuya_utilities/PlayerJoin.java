@@ -17,7 +17,7 @@ public class PlayerJoin implements Listener  {
         }
 
         if (ConfigListener.plugin.getConfig().getBoolean("plugin-info-message-active")) {
-            player.sendMessage(ChatColor.GRAY + "You are using Kazuya-Utilities 1.0.0");
+            player.sendMessage(ChatColor.GRAY + "You are using Kazuya-Utilities 1.0.1");
         } 
     }
     
