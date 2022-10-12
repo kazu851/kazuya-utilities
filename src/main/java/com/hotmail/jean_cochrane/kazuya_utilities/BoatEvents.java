@@ -24,6 +24,9 @@ public class BoatEvents implements Listener {
         } else if (entity.toString() == "CraftVillagerZombie" && !ConfigListener.plugin.getConfig().getBoolean("allow-villager-zombie-in-vehicle")) {
             Bukkit.broadcastMessage(ChatColor.GREEN + "<Villager Zombie>: You can't keep me stuck in there!");
             event.setCancelled(true);
+        } else if (entity.toString() == "CraftDrowned" && !ConfigListener.plugin.getConfig().getBoolean("allow-drowned-in-vehicle")) {
+            Bukkit.broadcastMessage(ChatColor.GREEN + "<Drowned>: You can't keep me stuck in there!");
+            event.setCancelled(true);
         }
 
     }
