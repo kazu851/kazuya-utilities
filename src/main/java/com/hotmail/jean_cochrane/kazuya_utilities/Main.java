@@ -43,6 +43,7 @@ public class Main extends JavaPlugin {
         config.addDefault("allow-zombie-in-vehicle", true);
         config.addDefault("allow-husk-in-vehicle", true);
         config.addDefault("allow-villager-zombie-in-vehicle", true);
+        config.addDefault("allow-drowned-in-vehicle", true);
         config.addDefault("prevent-villagers-career-change", true);
         config.addDefault("villager-says-he-studied", true);
         config.addDefault("hide-op-join-quit-message", true);
