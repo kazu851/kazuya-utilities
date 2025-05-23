@@ -27,6 +27,7 @@ public class Main extends JavaPlugin {
         pm.registerEvents( new ReadChat(), this);
         pm.registerEvents( new BoatEvents(), this);
         pm.registerEvents( new VillagerEvents(), this);
+        pm.registerEvents( new ClockEvents(), this);
         
         getCommand("kazuya-utilities").setExecutor(new MainCommand());
     }
@@ -47,6 +48,7 @@ public class Main extends JavaPlugin {
         config.addDefault("prevent-villagers-career-change", true);
         config.addDefault("villager-says-he-studied", true);
         config.addDefault("hide-op-join-quit-message", true);
+        config.addDefault("clocks-show-time", true);
         config.options().copyDefaults(true);
         saveConfig();
 
